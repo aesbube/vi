@@ -247,5 +247,6 @@ if __name__ == '__main__':
     orientation = 'down'
 
     snake_problem = Snake((snake_segments, orientation, tuple(coordinates_green)), tuple(coordinates_red))
-
-    print(breadth_first_graph_search(snake_problem).solution())
+    snake_problem_solution = breadth_first_graph_search(snake_problem)
+    if snake_problem_solution is not None:
+        print(snake_problem_solution.solution())
