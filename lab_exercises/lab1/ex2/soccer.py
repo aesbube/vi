@@ -1,6 +1,8 @@
 from searching_framework import Problem, breadth_first_graph_search
 
 
+# mnogu pedersko reshenie poveli
+
 def check_validity(player, ball, enemy_territory):
     if 0 <= player[0] < 8 and 0 <= player[1] < 6 and 0 <= ball[0] < 8 and 0 <= ball[1] < 6 and \
             ball not in enemy_territory and player != ball and player != (3, 3) and player != (5, 4):

@@ -1,6 +1,8 @@
 from searching_framework import Problem, breadth_first_graph_search
 
 
+# mnogu pedersko reshenie poveli
+
 def ProdolzhiPravo(snake_body, snake_orientation, red_apples, green_apples):
     head_coordinates = snake_body[-1]
     if snake_orientation == 'down':
