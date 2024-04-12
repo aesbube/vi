@@ -17,16 +17,15 @@ class Balls(Problem):
 
     def successor(self, state):
         succ = {}
-            
+
         return succ
 
     @staticmethod
-    def is_valid(state):
-        state1 = list(state)
-        for tup in state1:
-            x, y = tup
-            if x < 0 or x > size or y < 0 or y > size:
-                return False
+    def is_valid(node):
+        x, y = node
+        if x < 0 or x > size or y < 0 or y > size:
+            return False
+        
         return True
 
     def actions(self, state):
