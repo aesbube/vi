@@ -9,7 +9,7 @@ class Balls(Problem):
         self.goal = (size // 2, size - 1)
 
     def successor(self, state):
-        succ = {}
+        successor = {}
         balls = state
         moves = ["Gore Levo:", "Gore Desno:", "Dolu Levo:", "Dolu Desno:", "Levo:", "Desno:"]
         coords1 = [(-2, 2), (2, 2), (-2, -2), (2, -2), (-2, 0), (2, 0)]
@@ -27,9 +27,9 @@ class Balls(Problem):
                         x, y = current_balls[i]
                         current_balls[i] = new_ball
                         current_balls = [tuple(ball) for ball in current_balls if ball != ball_in_between]
-                        succ[f"{move} (x={x},y={y})"] = tuple(current_balls)
+                        successor[f"{move} (x={x},y={y})"] = tuple(current_balls)
 
-        return succ
+        return successor
 
     def is_valid(self, node):
         x, y = node
