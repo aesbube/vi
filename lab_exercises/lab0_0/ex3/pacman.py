@@ -10,3 +10,5 @@
 #
 # class Game:
 #     def __init__(self, width, height, ):
+
+# me mrzi da ja reshavam
