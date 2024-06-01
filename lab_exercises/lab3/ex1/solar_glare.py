@@ -3,7 +3,7 @@ from sklearn.preprocessing import OrdinalEncoder
 from sklearn.metrics import accuracy_score
 
 import os
-from submission_script import *
+# from submission_script import *
 from dataset_script import dataset
 
 # Ova e primerok od podatochnoto mnozestvo, za treniranje/evaluacija koristete ja
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     probs = classifier.predict_proba(new_enc_x)
     print(probs)
 
-    submit_train_data(enc_train_x, train_y)
-    submit_test_data(enc_test_x, test_y)
-    submit_classifier(classifier)
-    submit_encoder(encoder)
+    # submit_train_data(enc_train_x, train_y)
+    # submit_test_data(enc_test_x, test_y)
+    # submit_classifier(classifier)
+    # submit_encoder(encoder)
